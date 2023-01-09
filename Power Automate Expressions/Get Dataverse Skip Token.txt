@@ -1,0 +1,1 @@
+if(empty(outputs(<string: list rows step>)?['body/@odata.nextLink']),'',decodeUriComponent(last(split(uriQuery(outputs(<string: list rows step>)?['body/@odata.nextLink']),'skiptoken='))))
