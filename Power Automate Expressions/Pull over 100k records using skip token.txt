@@ -1,0 +1,4 @@
+Skip token requirements:
+Paging is disabled in advanced
+Two List row steps; one gets the first 5000 records and returns a skip token, the second list rows is in a "do until skip token is blank" step.
+To optimize parallel processing, send each batch of 5k records to a child flow
